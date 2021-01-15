@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "outDir": "./lib",
+        "sourceMap": true,
+        "module": "CommonJS",
+        "moduleResolution": "node", //use node style module resolution
+        // "esModuleInterop": true
+    },
+    "include": [
+        "src/**/*"
+    ],
+}
