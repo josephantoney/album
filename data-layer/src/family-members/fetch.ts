@@ -14,7 +14,7 @@ const fetchAllFamilyMembers = (familyId: String): FamilyMember[] | undefined => 
     return [{
         id: "123",
         name: "Joseph",
-        dob: "1983-06-10",
+        dob: "1901-01-01",
         sex: "M",
         primaryPhoto: "/images/family/joseph/img12345.jpg"
     }];
@@ -28,7 +28,7 @@ const fetchFamilyMember = (memberId: String): FamilyMember | undefined => {
     return ({
         id: "123",
         name: "Joseph",
-        dob: "1983-06-10",
+        dob: "1901-01-01",
         sex: "M",
         primaryPhoto: "/images/family/joseph/img12345.jpg"
     });
