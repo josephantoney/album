@@ -1,0 +1,17 @@
+{
+  "name": "@album/datalayer",
+  "version": "1.0.0",
+  "description": "Package which manages all the data base communications and CURD operations.",
+  "main": "lib/index.js",
+  "author": "Joseph Thomas",
+  "license": "MIT",
+  
+  "devDependencies": {
+    "typescript": "~4.1.3"
+  },
+
+  "scripts": {
+    "build": "tsc"
+  }
+
+}
