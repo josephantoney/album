@@ -388,15 +388,15 @@
   "projects": [
       {
       "packageName": "@album/datalayer",
-      "projectFolder": "data-layer"
+      "projectFolder": "packages/data-layer"
     },
     {
       "packageName": "@album/domainlayer",
-      "projectFolder": "domain-layer"
+      "projectFolder": "packages/domain-layer"
     },
     {
       "packageName": "@album/webserver",
-      "projectFolder": "web-server"
+      "projectFolder": "packages/web-server"
     }
   ]
 }

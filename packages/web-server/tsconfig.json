@@ -4,12 +4,13 @@
         "sourceMap": true,
         "module": "CommonJS",
         "moduleResolution": "node", //use node style module resolution
-        "esModuleInterop": true, 
+        "esModuleInterop": true,
         "declaration": true,
+        "declarationMap": true,
         "allowSyntheticDefaultImports": true,
-        "forceConsistentCasingInFileNames": true,
+        "forceConsistentCasingInFileNames": true
     },
     "include": [
         "src/**/*"
-    ]
+    ],
 }

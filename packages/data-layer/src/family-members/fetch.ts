@@ -36,5 +36,5 @@ const fetchFamilyMember = (memberId: string): FamilyMember | undefined => {
 
 export const familyMember = {
     fetchAllFamilyMembers,
-    fetchFamilyMember
+    fetchFamilyMember,
 }
