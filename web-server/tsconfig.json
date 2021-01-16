@@ -4,7 +4,10 @@
         "sourceMap": true,
         "module": "CommonJS",
         "moduleResolution": "node", //use node style module resolution
-        "esModuleInterop": true
+        "esModuleInterop": true,
+        "declaration": true,
+        "allowSyntheticDefaultImports": true,
+        "forceConsistentCasingInFileNames": true
     },
     "include": [
         "src/**/*"
