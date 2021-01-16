@@ -4,7 +4,6 @@ const getAllFamilyMembers = (familyId: string): FamilyMember[] => dlFamilyMember
 
 const getFamilyMember = (familyMemberId: string): FamilyMember => dlFamilyMember.fetchFamilyMember(familyMemberId);
 
-
 export const familyMember = {
     getAllFamilyMembers,
     getFamilyMember

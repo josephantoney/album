@@ -1,12 +1,12 @@
 export interface FamilyMember {
-    id: String;
-    name: String;
-    dob: String;
-    sex: String;
-    primaryPhoto: String;
+    id: string;
+    name: string;
+    dob: string;
+    sex: string;
+    primaryPhoto: string;
 }
 
-const fetchAllFamilyMembers = (familyId: String): FamilyMember[] | undefined => {
+const fetchAllFamilyMembers = (familyId: string): FamilyMember[] | undefined => {
     const query = `select id, name, dob, sex, primaryPhoto from family where id = ${familyId}`;
     
     // do db fetch
@@ -20,7 +20,7 @@ const fetchAllFamilyMembers = (familyId: String): FamilyMember[] | undefined => 
     }];
 }
 
-const fetchFamilyMember = (memberId: String): FamilyMember | undefined => {
+const fetchFamilyMember = (memberId: string): FamilyMember | undefined => {
     const query = `select id, name, dob, sex, primaryPhoto from family where id = ${memberId}`;
 
     // do db fetch
