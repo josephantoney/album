@@ -1,9 +1,15 @@
 dependencies:
   '@rush-temp/datalayer': 'file:projects/datalayer.tgz'
   '@rush-temp/domainlayer': 'file:projects/domainlayer.tgz'
+  '@rush-temp/webclient': 'file:projects/webclient.tgz'
   '@rush-temp/webserver': 'file:projects/webserver.tgz'
   '@types/express': 4.17.11
+  '@types/node': 12.19.14
+  '@types/react': 16.9.19
+  '@types/react-dom': 16.9.5
   express: 4.17.1
+  react: 17.0.0
+  react-dom: 17.0.0_react@17.0.0
   rimraf: 3.0.2
   typescript: 4.1.3
 lockfileVersion: 5.1
@@ -42,10 +48,18 @@ packages:
     dev: false
     resolution:
       integrity: sha512-Jus9s4CDbqwocc5pOAnh8ShfrnMcPHuJYzVcSUU7lrh8Ni5HuIqX3oilL86p3dlTrk0LzHRCgA/GQ7uNCw6l2Q==
+  /@types/node/12.19.14:
+    dev: false
+    resolution:
+      integrity: sha512-2U9uLN46+7dv9PiS8VQJcHhuoOjiDPZOLAt0WuA1EanEknIMae+2QbMhayF7cgGqjvRVIfNpt+6jLPczJZFiRw==
   /@types/node/14.14.21:
     dev: false
     resolution:
       integrity: sha512-cHYfKsnwllYhjOzuC5q1VpguABBeecUp24yFluHpn/BQaVxB1CuQ1FSRZCzrPxrkIfWISXV2LbeoBthLWg0+0A==
+  /@types/prop-types/15.7.3:
+    dev: false
+    resolution:
+      integrity: sha512-KfRL3PuHmqQLOG+2tGpRO26Ctg+Cq1E01D2DMriKEATHgWLfeNDmq9e29Q9WIky0dQ3NPkd1mzYH8Lm936Z9qw==
   /@types/qs/6.9.5:
     dev: false
     resolution:
@@ -54,6 +68,19 @@ packages:
     dev: false
     resolution:
       integrity: sha512-ewFXqrQHlFsgc09MK5jP5iR7vumV/BYayNC6PgJO2LPe8vrnNFyjQjSppfEngITi0qvfKtzFvgKymGheFM9UOA==
+  /@types/react-dom/16.9.5:
+    dependencies:
+      '@types/react': 16.9.19
+    dev: false
+    resolution:
+      integrity: sha512-BX6RQ8s9D+2/gDhxrj8OW+YD4R+8hj7FEM/OJHGNR0KipE1h1mSsf39YeyC81qafkq+N3rU3h3RFbLSwE5VqUg==
+  /@types/react/16.9.19:
+    dependencies:
+      '@types/prop-types': 15.7.3
+      csstype: 2.6.14
+    dev: false
+    resolution:
+      integrity: sha512-LJV97//H+zqKWMms0kvxaKYJDG05U2TtQB3chRLF8MPNs+MQh/H1aGlyDUxjaHvu08EAGerdX2z4LTBc7ns77A==
   /@types/serve-static/1.13.8:
     dependencies:
       '@types/mime': 2.0.3
@@ -136,6 +163,10 @@ packages:
       node: '>= 0.6'
     resolution:
       integrity: sha512-+Hp8fLp57wnUSt0tY0tHEXh4voZRDnoIrZPqlo3DPiI4y9lwg/jqx+1Om94/W6ZaPDOUbnjOt/99w66zk+l1Xg==
+  /csstype/2.6.14:
+    dev: false
+    resolution:
+      integrity: sha512-2mSc+VEpGPblzAxyeR+vZhJKgYg0Og0nnRi7pmRXFYYxSfnOnW8A5wwQb4n4cE2nIOzqKOAzLCaEX6aBmNEv8A==
   /debug/2.6.9:
     dependencies:
       ms: 2.0.0
@@ -303,6 +334,17 @@ packages:
       node: '>= 0.10'
     resolution:
       integrity: sha512-0KI/607xoxSToH7GjN1FfSbLoU0+btTicjsQSWQlh/hZykN8KpmMf7uYwPW3R+akZ6R/w18ZlXSHBYXiYUPO3g==
+  /js-tokens/4.0.0:
+    dev: false
+    resolution:
+      integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==
+  /loose-envify/1.4.0:
+    dependencies:
+      js-tokens: 4.0.0
+    dev: false
+    hasBin: true
+    resolution:
+      integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==
   /media-typer/0.3.0:
     dev: false
     engines:
@@ -360,6 +402,12 @@ packages:
       node: '>= 0.6'
     resolution:
       integrity: sha512-hZXc7K2e+PgeI1eDBe/10Ard4ekbfrrqG8Ep+8Jmf4JID2bNg7NvCPOZN+kfF574pFQI7mum2AUqDidoKqcTOw==
+  /object-assign/4.1.1:
+    dev: false
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha1-IQmtx5ZYh8/AXLvUQsrIv7s2CGM=
   /on-finished/2.3.0:
     dependencies:
       ee-first: 1.1.1
@@ -422,6 +470,26 @@ packages:
       node: '>= 0.8'
     resolution:
       integrity: sha512-4Oz8DUIwdvoa5qMJelxipzi/iJIi40O5cGV1wNYp5hvZP8ZN0T+jiNkL0QepXs+EsQ9XJ8ipEDoiH70ySUJP3Q==
+  /react-dom/17.0.0_react@17.0.0:
+    dependencies:
+      loose-envify: 1.4.0
+      object-assign: 4.1.1
+      react: 17.0.0
+      scheduler: 0.20.1
+    dev: false
+    peerDependencies:
+      react: 17.0.0
+    resolution:
+      integrity: sha512-OGnFbxCjI2TMAZYMVxi4hqheJiN8rCEVVrL7XIGzCB6beNc4Am8M47HtkvxODZw9QgjmAPKpLba9FTu4fC1byA==
+  /react/17.0.0:
+    dependencies:
+      loose-envify: 1.4.0
+      object-assign: 4.1.1
+    dev: false
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha512-rG9bqS3LMuetoSUKHN8G3fMNuQOePKDThK6+2yXFWtoeTDLVNh/QCaxT+Jr+rNf4lwNXpx+atdn3Aa0oi8/6eQ==
   /rimraf/3.0.2:
     dependencies:
       glob: 7.1.6
@@ -437,6 +505,13 @@ packages:
     dev: false
     resolution:
       integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
+  /scheduler/0.20.1:
+    dependencies:
+      loose-envify: 1.4.0
+      object-assign: 4.1.1
+    dev: false
+    resolution:
+      integrity: sha512-LKTe+2xNJBNxu/QhHvDR14wUXHRQbVY5ZOYpOGWRzhydZUqrLb2JBvLPY7cAqFmqrWuDED0Mjk7013SZiOz6Bw==
   /send/0.17.1:
     dependencies:
       debug: 2.6.9
@@ -535,30 +610,57 @@ packages:
     version: 0.0.0
   'file:projects/domainlayer.tgz':
     dependencies:
+      rimraf: 3.0.2
       typescript: 4.1.3
     dev: false
     name: '@rush-temp/domainlayer'
     resolution:
-      integrity: sha512-yZv65S+bvjKn1yoEcO0LJWe547vMuDHWs4Ax3o7dKMSNO5euH7OTDXWj6ooYzeebqi+HFIQgKwSCsqQ3hP3OJg==
+      integrity: sha512-iahVqvv1BmsPU2RVk3PHg+3NTxnVWOmAIbos3no1frM1AxnVZLPaDw4+7o0/WtqxXfO2StSN3N+EDNdSxWt/Uw==
       tarball: 'file:projects/domainlayer.tgz'
+    version: 0.0.0
+  'file:projects/webclient.tgz':
+    dependencies:
+      '@types/react': 16.9.19
+      '@types/react-dom': 16.9.5
+      react: 17.0.0
+      react-dom: 17.0.0_react@17.0.0
+      rimraf: 3.0.2
+      typescript: 4.1.3
+    dev: false
+    name: '@rush-temp/webclient'
+    resolution:
+      integrity: sha512-p2KANsDUYqQFl+70fPkVlLB2no59eaAGJAPT/6VlUk5DZCUCCRqO+HcdXEgUrb/0I2zZ620qBq1psCCq+NCZrw==
+      tarball: 'file:projects/webclient.tgz'
     version: 0.0.0
   'file:projects/webserver.tgz':
     dependencies:
       '@types/express': 4.17.11
+      '@types/node': 12.19.14
+      '@types/react': 16.9.19
+      '@types/react-dom': 16.9.5
       express: 4.17.1
+      react: 17.0.0
+      react-dom: 17.0.0_react@17.0.0
+      rimraf: 3.0.2
       typescript: 4.1.3
     dev: false
     name: '@rush-temp/webserver'
     resolution:
-      integrity: sha512-McevtmUyzbcEnRQKCBFxMk8EabMWjU29/YOBacyW1NHVaKQ7RBzf73euZs8GFrEUupr26/Vn8JLa5gE2rc2emA==
+      integrity: sha512-h6F62i39BCYnEJKc1TtzHA5J5JmBiLKHMMzXCQNd4a97Pz/9+0AByNSeQGygFvGSyi14mo1W4Tuc/LlEhhaoLg==
       tarball: 'file:projects/webserver.tgz'
     version: 0.0.0
 registry: ''
 specifiers:
   '@rush-temp/datalayer': 'file:./projects/datalayer.tgz'
   '@rush-temp/domainlayer': 'file:./projects/domainlayer.tgz'
+  '@rush-temp/webclient': 'file:./projects/webclient.tgz'
   '@rush-temp/webserver': 'file:./projects/webserver.tgz'
   '@types/express': ~4.17.9
+  '@types/node': 12.19.14
+  '@types/react': 16.9.19
+  '@types/react-dom': 16.9.5
   express: ^4.16.4
+  react: 17.0.0
+  react-dom: 17.0.0
   rimraf: ~3.0.2
   typescript: ~4.1.3

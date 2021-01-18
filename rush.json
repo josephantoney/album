@@ -395,6 +395,10 @@
       "projectFolder": "packages/domain-layer"
     },
     {
+      "packageName": "@album/webclient",
+      "projectFolder": "packages/web-client"
+    },
+    {
       "packageName": "@album/webserver",
       "projectFolder": "packages/web-server"
     }
