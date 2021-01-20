@@ -7,6 +7,9 @@ const app = express();
 
 healthCheck(app);
 
+app.use(express.static('../dist'));
+app.use(express.static('../public'));
+
 // app.get("/", (req, res) => {
 //     res.send(familyMember.getAllFamilyMembers("123"));
 // })

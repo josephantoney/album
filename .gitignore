@@ -67,3 +67,4 @@ common/autoinstallers/*/.npmrc
 # from album
 
 **/lib/
+**/dist/
