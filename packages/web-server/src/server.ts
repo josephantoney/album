@@ -17,5 +17,5 @@ app.use(express.static('../public'));
 serveHTML(app);
 
 app.listen(4000, () => {
-    console.log("digi frame web app listening on port 4000")
+    console.log('digi frame web app listening on port 4000');
 });

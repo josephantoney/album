@@ -5,10 +5,19 @@
   "main": "lib/index.js",
   "author": "Joseph Thomas",
   "license": "MIT",
+
+  "engines": {
+      "node": ">=8.10.0"
+  },
   
   "devDependencies": {
     "typescript": "~4.1.3",
-    "rimraf": "~3.0.2"
+    "eslint": "~7.18.0",
+    "@typescript-eslint/parser": "~4.14.0",
+    "@typescript-eslint/eslint-plugin": "~4.14.0",
+    "prettier": "~2.2.1",
+    "rimraf": "~3.0.2",
+    "eslint-plugin-node": "~11.1.0"
   },
 
   "scripts": {

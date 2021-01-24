@@ -6,22 +6,30 @@
   "license": "MIT",
   "main": "lib/index.js",
 
+  "engines": {
+      "node": ">=8.10.0"
+  },
+
   "dependencies": {
     "react": "17.0.0",
     "react-dom": "17.0.0"
   },
 
   "devDependencies": {
+    "typescript": "~4.1.3",
+    "eslint": "~7.18.0",
+    "@typescript-eslint/parser": "~4.14.0",
+    "@typescript-eslint/eslint-plugin": "~4.14.0",
+    "eslint-plugin-react": "7.21.0",
+    "prettier": "~2.2.1",
     "@types/react": "16.9.19",
     "@types/react-dom": "16.9.5",
-    "typescript": "~4.1.3",
     "rimraf": "~3.0.2",
     "webpack": "~5.15.0",
     "ts-loader": "~8.0.14",
     "webpack-cli": "~4.3.1"
   },
   "scripts": {
-    "build": "rimraf lib && tsc && webpack --mode development",
-    "bundle": "webpack --mode development"
+    "build": "rimraf lib && eslint && tsc && webpack --mode development"
   }
 }
