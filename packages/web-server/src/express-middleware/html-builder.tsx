@@ -8,7 +8,8 @@ import path from 'path';
 export const serveHTML = (app: Application): void => {
     app.get('/server.html', (req, res: Response) => {
         const appComp = ReactDOMServer.renderToString(
-            <App input={'Hello World'} />
+            // <App input={'Hello World'} />
+            null
         );
 
         fs.readFile(
