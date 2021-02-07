@@ -33,7 +33,8 @@
   },
   
   "scripts": {
-    "build": "rimraf lib && tsc",
+    "clean": "rimraf lib",
+    "build": "rushx clean && rimraf lib && tsc",
     "start": "node ./lib/server.js"
   }
 }

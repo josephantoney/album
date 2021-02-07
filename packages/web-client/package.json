@@ -27,9 +27,12 @@
     "prettier": "~2.2.1",
     "rimraf": "~3.0.2",
     "webpack": "~5.15.0",
-    "webpack-cli": "~4.3.1"
+    "webpack-cli": "~4.3.1",
+    "ts-loader": "~8.0.15",
+    "@emotion/react": "~11.1.5"
   },
   "scripts": {
-    "build": "rimraf ../dist && rimraf lib && eslint && tsc && webpack --mode development"
+    "clean": "rimraf ../dist && rimraf lib",
+    "build": "rushx clean && eslint && tsc && webpack --mode development"
   }
 }

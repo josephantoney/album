@@ -24,6 +24,7 @@
   },
 
   "scripts": {
-    "build": "rimraf lib && tsc"
+    "clean": "rimraf lib",
+    "build": "rushx clean && tsc"
   }
 }

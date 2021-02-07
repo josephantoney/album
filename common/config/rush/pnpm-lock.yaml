@@ -1,4 +1,5 @@
 dependencies:
+  '@emotion/react': 11.1.5_63acf42fdbe0090446c8ea135adc61e5
   '@rush-temp/datalayer': 'file:projects/datalayer.tgz'
   '@rush-temp/domainlayer': 'file:projects/domainlayer.tgz'
   '@rush-temp/webclient': 'file:projects/webclient.tgz'
@@ -8,22 +9,15 @@ dependencies:
   '@types/react-dom': 16.9.5
   '@typescript-eslint/eslint-plugin': 4.14.0_980e7d90d2d08155204a38366bd3b934
   '@typescript-eslint/parser': 4.14.0_eslint@7.18.0+typescript@4.1.3
-  cpx: 1.5.0
-  css-loader: 5.0.1_webpack@5.15.0
   eslint: 7.18.0
   eslint-plugin-node: 11.1.0_eslint@7.18.0
   eslint-plugin-react: 7.21.0_eslint@7.18.0
   express: 4.17.1
-  extract-loader: 5.1.0
-  file-loader: 6.2.0_webpack@5.15.0
-  less: 4.1.0
-  less-loader: 7.3.0_less@4.1.0+webpack@5.15.0
   prettier: 2.2.1
   react: 17.0.0
   react-dom: 17.0.0_react@17.0.0
   rimraf: 3.0.2
-  style-loader: 2.0.0_webpack@5.15.0
-  ts-loader: 8.0.14_typescript@4.1.3+webpack@5.15.0
+  ts-loader: 8.0.15_typescript@4.1.3+webpack@5.15.0
   typescript: 4.1.3
   webpack: 5.15.0_webpack-cli@4.3.1+webpack@5.15.0
   webpack-cli: 4.3.1_webpack-cli@4.3.1+webpack@5.15.0
@@ -47,12 +41,85 @@ packages:
     dev: false
     resolution:
       integrity: sha512-i6rgnR/YgPEQzZZnbTHHuZdlE8qyoBNalD6F+q4vAFlcMEcqmkoG+mPqJYJCo63qPf74+Y1UZsl3l6f7/RIkmA==
+  /@babel/runtime/7.12.13:
+    dependencies:
+      regenerator-runtime: 0.13.7
+    dev: false
+    resolution:
+      integrity: sha512-8+3UMPBrjFa/6TtKi/7sehPKqfAm4g6K+YQjyyFOLUTxzOngcRZTlAVY8sc2CORJYqdHQY8gRPHmn+qo15rCBw==
   /@discoveryjs/json-ext/0.5.2:
     dev: false
     engines:
       node: '>=10.0.0'
     resolution:
       integrity: sha512-HyYEUDeIj5rRQU2Hk5HTB2uHsbRQpF70nvMhVzi+VJR0X+xNEhjPui4/kBf3VeH/wqD28PT4sVOm8qqLjBrSZg==
+  /@emotion/cache/11.1.3:
+    dependencies:
+      '@emotion/memoize': 0.7.5
+      '@emotion/sheet': 1.0.1
+      '@emotion/utils': 1.0.0
+      '@emotion/weak-memoize': 0.2.5
+      stylis: 4.0.7
+    dev: false
+    resolution:
+      integrity: sha512-n4OWinUPJVaP6fXxWZD9OUeQ0lY7DvtmtSuqtRWT0Ofo/sBLCVSgb4/Oa0Q5eFxcwablRKjUXqXtNZVyEwCAuA==
+  /@emotion/hash/0.8.0:
+    dev: false
+    resolution:
+      integrity: sha512-kBJtf7PH6aWwZ6fka3zQ0p6SBYzx4fl1LoZXE2RrnYST9Xljm7WfKJrU4g/Xr3Beg72MLrp1AWNUmuYJTL7Cow==
+  /@emotion/memoize/0.7.5:
+    dev: false
+    resolution:
+      integrity: sha512-igX9a37DR2ZPGYtV6suZ6whr8pTFtyHL3K/oLUotxpSVO2ASaprmAe2Dkq7tBo7CRY7MMDrAa9nuQP9/YG8FxQ==
+  /@emotion/react/11.1.5_63acf42fdbe0090446c8ea135adc61e5:
+    dependencies:
+      '@babel/runtime': 7.12.13
+      '@emotion/cache': 11.1.3
+      '@emotion/serialize': 1.0.0
+      '@emotion/sheet': 1.0.1
+      '@emotion/utils': 1.0.0
+      '@emotion/weak-memoize': 0.2.5
+      '@types/react': 16.9.19
+      hoist-non-react-statics: 3.3.2
+      react: 17.0.0
+    dev: false
+    peerDependencies:
+      '@babel/core': ^7.0.0
+      '@types/react': '*'
+      react: '>=16.8.0'
+    peerDependenciesMeta:
+      '@babel/core':
+        optional: true
+      '@types/react':
+        optional: true
+    resolution:
+      integrity: sha512-xfnZ9NJEv9SU9K2sxXM06lzjK245xSeHRpUh67eARBm3PBHjjKIZlfWZ7UQvD0Obvw6ZKjlC79uHrlzFYpOB/Q==
+  /@emotion/serialize/1.0.0:
+    dependencies:
+      '@emotion/hash': 0.8.0
+      '@emotion/memoize': 0.7.5
+      '@emotion/unitless': 0.7.5
+      '@emotion/utils': 1.0.0
+      csstype: 3.0.6
+    dev: false
+    resolution:
+      integrity: sha512-zt1gm4rhdo5Sry8QpCOpopIUIKU+mUSpV9WNmFILUraatm5dttNEaYzUWWSboSMUE6PtN2j1cAsuvcugfdI3mw==
+  /@emotion/sheet/1.0.1:
+    dev: false
+    resolution:
+      integrity: sha512-GbIvVMe4U+Zc+929N1V7nW6YYJtidj31lidSmdYcWozwoBIObXBnaJkKNDjZrLm9Nc0BR+ZyHNaRZxqNZbof5g==
+  /@emotion/unitless/0.7.5:
+    dev: false
+    resolution:
+      integrity: sha512-OWORNpfjMsSSUBVrRBVGECkhWcULOAJz9ZW8uK9qgxD+87M7jHRcvh/A96XXNhXTLmKcoYSQtBEX7lHMO7YRwg==
+  /@emotion/utils/1.0.0:
+    dev: false
+    resolution:
+      integrity: sha512-mQC2b3XLDs6QCW+pDQDiyO/EdGZYOygE8s5N5rrzjSI4M3IejPE/JPndCBwRT9z982aqQNi6beWs1UeayrQxxA==
+  /@emotion/weak-memoize/0.2.5:
+    dev: false
+    resolution:
+      integrity: sha512-6U71C2Wp7r5XtFtQzYrW5iKFT67OixrSxjI4MptCHzdSVlgabczzqLe0ZSgnub/5Kp4hSbpDB1tMytZY9pwxxA==
   /@eslint/eslintrc/0.3.0:
     dependencies:
       ajv: 6.12.6
@@ -1505,6 +1572,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-2mSc+VEpGPblzAxyeR+vZhJKgYg0Og0nnRi7pmRXFYYxSfnOnW8A5wwQb4n4cE2nIOzqKOAzLCaEX6aBmNEv8A==
+  /csstype/3.0.6:
+    dev: false
+    resolution:
+      integrity: sha512-+ZAmfyWMT7TiIlzdqJgjMb7S4f1beorDbWbsocyK4RaiqA5RTX3K14bnBWmmA9QEM0gRdsjyyrEmcyga8Zsxmw==
   /debug/2.6.9:
     dependencies:
       ms: 2.0.0
@@ -2449,6 +2520,12 @@ packages:
       node: '>= 0.4.0'
     resolution:
       integrity: sha512-f2dvO0VU6Oej7RkWJGrehjbzMAjFp5/VKPp5tTpWIV4JHHZK1/BxbFRtf/siA2SWTe09caDmVtYYzWEIbBS4zw==
+  /hoist-non-react-statics/3.3.2:
+    dependencies:
+      react-is: 16.13.1
+    dev: false
+    resolution:
+      integrity: sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==
   /home-or-tmp/2.0.0:
     dependencies:
       os-homedir: 1.0.2
@@ -3852,6 +3929,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-MguG95oij0fC3QV3URf4V2SDYGJhJnJGqvIIgdECeODCT98wSWDAJ94SSuVpYQUoTcGUIL6L4yNB7j1DFFHSBg==
+  /regenerator-runtime/0.13.7:
+    dev: false
+    resolution:
+      integrity: sha512-a54FxoJDIr27pgf7IgeQGxmqUNYrcV338lf/6gH456HZ/PhX+5BcwHXG9ajESmwe6WRO0tAzRUrRmNONWgkrew==
   /regenerator-transform/0.10.1:
     dependencies:
       babel-runtime: 6.26.0
@@ -4347,6 +4428,10 @@ packages:
       webpack: ^4.0.0 || ^5.0.0
     resolution:
       integrity: sha512-Z0gYUJmzZ6ZdRUqpg1r8GsaFKypE+3xAzuFeMuoHgjc9KZv3wMyCRjQIWEbhoFSq7+7yoHXySDJyyWQaPajeiQ==
+  /stylis/4.0.7:
+    dev: false
+    resolution:
+      integrity: sha512-OFFeUXFgwnGOKvEXaSv0D0KQ5ADP0n6g3SVONx6I/85JzNZ3u50FRwB3lVIk1QO2HNdI75tbVzc4Z66Gdp9voA==
   /subarg/1.0.0:
     dependencies:
       minimist: 1.2.5
@@ -4500,6 +4585,23 @@ packages:
       webpack: '*'
     resolution:
       integrity: sha512-Jt/hHlUnApOZjnSjTmZ+AbD5BGlQFx3f1D0nYuNKwz0JJnuDGHJas6az+FlWKwwRTu+26GXpv249A8UAnYUpqA==
+  /ts-loader/8.0.15_typescript@4.1.3+webpack@5.15.0:
+    dependencies:
+      chalk: 4.1.0
+      enhanced-resolve: 4.5.0
+      loader-utils: 2.0.0
+      micromatch: 4.0.2
+      semver: 7.3.4
+      typescript: 4.1.3
+      webpack: 5.15.0_webpack-cli@4.3.1+webpack@5.15.0
+    dev: false
+    engines:
+      node: '>=10.0.0'
+    peerDependencies:
+      typescript: '*'
+      webpack: '*'
+    resolution:
+      integrity: sha512-WYXfCEglgUPU6adGcx6I9DsMwSxYFU99rzteIEoZKDQn4IMbe4KpO934zRkwSOFcwEzh+gx/RaH8hhgoCAfF9w==
   /tslib/1.14.1:
     dev: false
     resolution:
@@ -4779,6 +4881,7 @@ packages:
     version: 0.0.0
   'file:projects/webclient.tgz':
     dependencies:
+      '@emotion/react': 11.1.5_63acf42fdbe0090446c8ea135adc61e5
       '@types/node': 14.14.22
       '@types/react': 16.9.19
       '@types/react-dom': 16.9.5
@@ -4797,14 +4900,14 @@ packages:
       react-dom: 17.0.0_react@17.0.0
       rimraf: 3.0.2
       style-loader: 2.0.0_webpack@5.15.0
-      ts-loader: 8.0.14_typescript@4.1.3+webpack@5.15.0
+      ts-loader: 8.0.15_typescript@4.1.3+webpack@5.15.0
       typescript: 4.1.3
       webpack: 5.15.0_webpack-cli@4.3.1+webpack@5.15.0
       webpack-cli: 4.3.1_webpack-cli@4.3.1+webpack@5.15.0
     dev: false
     name: '@rush-temp/webclient'
     resolution:
-      integrity: sha512-G8PIXiNi+dzL93QQpv92iMJOngvmanrw1+gYrY94Ffye5z6yDvTbF8w+u+c8y2jEPi8FVfkwT9BjahwxqgeQBw==
+      integrity: sha512-bMvpddk2ypg6zSIBNWAqKs0dF+1CftIqhCXFp8DeVs8IAoJfq2dNErWuL5Je2KxlhZmBnqDaRFLPdA0erDADOQ==
       tarball: 'file:projects/webclient.tgz'
     version: 0.0.0
   'file:projects/webserver.tgz':
@@ -4835,11 +4938,12 @@ packages:
     dev: false
     name: '@rush-temp/webserver'
     resolution:
-      integrity: sha512-64kjVQJ0CjWS5xj7VTnzP0yA8/ZE7Ol9OR9dmeV21b54swkezREC8qKxOAudKPiW73LMqpzoNokgZ3pK22a5cw==
+      integrity: sha512-ZNLT3o28V8mvzTBdXeiXRkg7/POTfA5+dTKEx4dbXbXaVBtAyN/YbxhQirafcYgTUovJBkj2cTMURTQADoFNLg==
       tarball: 'file:projects/webserver.tgz'
     version: 0.0.0
 registry: ''
 specifiers:
+  '@emotion/react': ~11.1.5
   '@rush-temp/datalayer': 'file:./projects/datalayer.tgz'
   '@rush-temp/domainlayer': 'file:./projects/domainlayer.tgz'
   '@rush-temp/webclient': 'file:./projects/webclient.tgz'
@@ -4849,22 +4953,15 @@ specifiers:
   '@types/react-dom': 16.9.5
   '@typescript-eslint/eslint-plugin': ~4.14.0
   '@typescript-eslint/parser': ~4.14.0
-  cpx: ~1.5.0
-  css-loader: ~5.0.1
   eslint: ~7.18.0
   eslint-plugin-node: ~11.1.0
   eslint-plugin-react: 7.21.0
   express: ^4.16.4
-  extract-loader: ~5.1.0
-  file-loader: ~6.2.0
-  less: ~4.1.0
-  less-loader: ~7.3.0
   prettier: ~2.2.1
   react: 17.0.0
   react-dom: 17.0.0
   rimraf: ~3.0.2
-  style-loader: ~2.0.0
-  ts-loader: ~8.0.14
+  ts-loader: ~8.0.15
   typescript: ~4.1.3
   webpack: ~5.15.0
   webpack-cli: ~4.3.1
