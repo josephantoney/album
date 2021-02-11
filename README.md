@@ -31,10 +31,6 @@
         <li>pnpm for package management</li>
         <li>Maintained by Microsoft</li>
     </ul>
-    <h4>Rush Tips</h4>
-    <ul>
-        <li>using node version 12.19.1</li>
-    </ul>
 <h3>TS Tips</h3>
     <ul>
         <li>we need ts-loader to debug in browser dev tool</li>

@@ -8,5 +8,6 @@
         "declarationMap": true,
         "allowSyntheticDefaultImports": true,
         "forceConsistentCasingInFileNames": true,
+        "composite": true
     }
 }

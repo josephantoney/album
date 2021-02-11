@@ -2,7 +2,7 @@
   "name": "@album/webserver",
   "version": "1.0.0",
   "description": "",
-  "main": "lib/server.js",
+  "main": "lib/src/server.js",
   "author": "Joseph Thomas",
   "license": "MIT",
 
@@ -34,7 +34,7 @@
   
   "scripts": {
     "clean": "rimraf lib",
-    "build": "rushx clean && rimraf lib && tsc",
-    "start": "node ./lib/server.js"
+    "build": "rushx clean && rimraf lib && tsc --build",
+    "start": "node --inspect ./lib/src/server.js"
   }
 }

@@ -2,7 +2,7 @@
   "name": "@album/domainlayer",
   "version": "1.0.0",
   "description": "domain layer code for business logics",
-  "main": "lib/index.js",
+  "main": "lib/src/index.js",
   "author": "Joseph Thomas",
   "license": "MIT",
 
@@ -25,6 +25,6 @@
 
   "scripts": {
     "clean": "rimraf lib",
-    "build": "rushx clean && tsc"
+    "build": "rushx clean && tsc --build"
   }
 }

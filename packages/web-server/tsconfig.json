@@ -1,11 +1,12 @@
 {
     "extends": "../configs/tsconfig-node-base.json",
     "compilerOptions": {
+        "rootDir": ".",
         "outDir": "./lib",
         "jsx": "react",
         "baseUrl": ".",
         "paths": {
-            "@album/webclient": ["node_modules/@album/webclient/lib"]
+            "@album/webclient": ["../web-client"]
         }
     },
     "include": [

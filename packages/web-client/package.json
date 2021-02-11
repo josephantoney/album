@@ -4,7 +4,7 @@
   "description": "",
   "author": "Joseph Thomas",
   "license": "MIT",
-  "main": "lib/index.js",
+  "main": "lib/src/index.js",
 
   "engines": {
       "node": ">=8.10.0"
@@ -12,7 +12,8 @@
 
   "dependencies": {
     "react": "17.0.0",
-    "react-dom": "17.0.0"
+    "react-dom": "17.0.0",
+    "@album/domainlayer": "~1.0.0"
   },
 
   "devDependencies": {
@@ -33,6 +34,6 @@
   },
   "scripts": {
     "clean": "rimraf ../dist && rimraf lib",
-    "build": "rushx clean && eslint && tsc && webpack --mode development"
+    "build": "rushx clean && eslint && tsc --build && webpack --mode development"
   }
 }

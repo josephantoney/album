@@ -2,7 +2,7 @@
   "name": "@album/datalayer",
   "version": "1.0.0",
   "description": "Package which manages all the data base communications and CURD operations.",
-  "main": "lib/index.js",
+  "main": "lib/src/index.js",
   "author": "Joseph Thomas",
   "license": "MIT",
 
@@ -22,7 +22,7 @@
 
   "scripts": {
     "clean": "rimraf lib",
-    "build": "rushx clean && tsc"
+    "build": "rushx clean && tsc --build"
   }
 
 }
